@@ -250,6 +250,8 @@ _______________________
 ### 2. bullet 
 <img src="./img/bullet1.png" width="100" height="100"/> <img src="./img/bullet2.png" width="100" height="100"/> <img src="./img/bullet3.png" width="100" height="100"/> <img src="./img/bullet4.png" width="100" height="100"/> 
 
+서로 다른 피격 정도, 속도, 거리를 가진 탄알
+
 ### 3. Map
 전체 배경
 
