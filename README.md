@@ -13,7 +13,7 @@ _____________________
 
 RigidBody의 사용을 최소화하고 중력, 마찰력, 수직항력, 충돌 처리등을 직접 구현하여 사용하였다. 
 
-![physics_flowchart](.img/physics_flowchart.png)
+![physics_flowchart](./img/physics_flowchart.png)
 
 ### 1. impulse
 ```cs
@@ -211,12 +211,12 @@ if 속도가 일정 이상이고 바닥에 닿아있을 경우:
 ```
 RayCast로 Object가 검출되면 속도를 0으로 바꿨고, 바닥부터 Player 사이의 거리를 hit.distance를 이용해 일정거리 이하일 경우 isGrounded를 true로 처리하여 반영했다.
 
-![physics_flat](.img/physics_flat.gif) ![physics_slop1](.img/physics_slop1.gif) ![physics_slop2](.img/physics_slop2.gif)
+![physics_flat](./img/physics_flat.gif) ![physics_slop1](./img/physics_slop1.gif) ![physics_slop2](./img/physics_slop2.gif)
 
 ## Photon
 ______________________
 
-![photon_flowchart](.img/photon_flowchart.png) 
+![photon_flowchart](./img/photon_flowchart.png) 
 
 1. 로비에서 Launcher.cs 와 MenuManager.cs 가 
 Photon PUN2 와  UI들을 이용해서 사용자들이 방을 개설하고 각자 정한 닉네임으로 게임에 참가할 수 있도록 과정을 구현했다.
@@ -243,74 +243,74 @@ Photon PUN2 와  UI들을 이용해서 사용자들이 방을 개설하고 각�
 ## Asset Modeling
 _______________________
 ### 1. Charactor (use blender)
-![ch1](.img/ch1.png) ![ch2](.img/ch2.png) ![ch3](.img/ch3.png) ![ch4](.img/ch4.png)
+<img src="./img/ch1.png" width="100" height="100"/> <img src="./img/ch2.png" width="100" height="100"/> <img src="./img/ch3.png" width="100" height="100"/> <img src="./img/ch4.png" width="100" height="100"/> 
 
-![ch_ex1](.img/ch_ex1.png) ![ch_ex2](.img/ch_ex2.png)   
+![ch_ex1](./img/ch_ex1.png) ![ch_ex2](./img/ch_ex2.png)   
 
 ### 2. bullet 
-![bullet1](.img/bullet1.png) ![bullet2](.img/bullet2.png) ![bullet3](.img/bullet3.png) ![bullet4](.img/bullet4.png)
+<img src="./img/bullet1.png" width="100" height="100"/> <img src="./img/bullet2.png" width="100" height="100"/> <img src="./img/bullet3.png" width="100" height="100"/> <img src="./img/bullet4.png" width="100" height="100"/> 
 
 ### 3. Map
 전체 배경
 
-![Backgroung_Zoomout](.img/bg_zoomout.png)
+![Backgroung_Zoomout](./img/bg_zoomout.png)
 
 유리, 거울, 투명체, 허공으로 이루어져 회전하는 벽
 
-![Backgroung_door](.img/bg_door.png)
+![Backgroung_door](./img/bg_door.png)
 
 서로 높이가 다른 지형
-![Backgroung_step](.img/bg_step.png)
+![Backgroung_step](./img/bg_step.png)
 
 마찰력이 다른 부스터 존
-![Backgroung_slide](.img/bg_slide.png)
+![Backgroung_slide](./img/bg_slide.png)
 
 벽과 천장이 탄알을 막아주는 리스폰 존
-![Backgroung_respawn](.img/bg_respawn.png)
+![Backgroung_respawn](./img/bg_respawn.png)
 
 ### 4. UI
 접속한 유저들의 위치가 나타나는 미니맵. Player의 팀을 구별한 후 x, z 좌표값을 받아와 전체 맵과의 비율을 계산한 뒤 UI에 실시간 투영한다. 
 
-![minimap](.img/minimap.png)
+![minimap](./img/minimap.png)
 
 점수와 현재 깃발을 가진 플레이어의 위치 표시. 깃발과 각 팀 터치다운 위치간의 Vector 거리차를 float로 산출하고 비율을 계산한 뒤 투영한다.
 
-![position](.img/position.png)
+![position](./img/position.png)
 
 깃발과의 인터렉션
 
-![capture](.img/capture.png)
+![capture](./img/capture.png)
 
 자신의 팀과 캐릭터의 체력 게이지
 
-![hp_guage](.img/hp_guage.png)
+![hp_guage](./img/hp_guage.png)
 
 다음 총알 발사까지의 쿨타임 상태
 
-![cooltime](.img/cooltime.png)
+![cooltime](./img/cooltime.png)
 
 ### Game Clips
 _______________________
 
 Move / Jump
 
-![move_jump](.img/move_jump.mp4)
+![move_jump](./img/move_jump.gif)
 
 Flag Interaction
 
-![flag_interaction](.img/flag_interaction.mp4)
+![flag_interaction](./img/flag_interaction.gif)
 
-Shoot / Destroy
+Shoot / Get flage
 
-![shoot_destroy](.img/shoot_getflag.mp4)
+![shoot_getflag](./img/shoot_getflag.gif)
 
 TouchDown / Score
 
-![touchdown_score](.img/touchdown_score.mp4)
+![touchdown_score](./img/touchdown_score.gif)
 
 Change Gun
 
-![change_gun](.img/change_bullet.mp4)
+![change_bullet](./img/change_bullet.gif)
 
 
 ### How to execute
